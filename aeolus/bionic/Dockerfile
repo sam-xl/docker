@@ -35,7 +35,7 @@ ENV ROS_DISTRO melodic
 
 # install ros packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ros-$ROS_DISTRO-ros-core \
+    ros-$ROS_DISTRO-robot \
     && rm -rf /var/lib/apt/lists/*
 
 # workaround for yak looking for libcuda.so.1 instead of libcuda.so
